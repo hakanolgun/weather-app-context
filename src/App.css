@@ -1,4 +1,5 @@
 body {
+  box-sizing: border-box;
   height: 100vh;
   display: flex;
   align-items: flex-start;
@@ -19,13 +20,15 @@ body {
   justify-content: space-between;
   z-index: 12;
   opacity: 0.8;
-}
-.headerContainer {
-  box-sizing: border-box;
+  padding: 10px;
   background: #000000;
   background: -webkit-linear-gradient(top right, #000000, #0c412e);
   background: -moz-linear-gradient(top right, #000000, #0c412e);
   background: linear-gradient(to bottom left, #000000, #0c412e);
+
+}
+.headerContainer {
+  box-sizing: border-box;
   width: 100%;
   max-width: 550px;
   text-align: center;
@@ -53,16 +56,12 @@ select:hover {
 .weathercardscontainer {
   box-sizing: border-box;
   border-radius: 0rem 0rem 1rem 1rem;
-  padding: 0rem 0.5rem;
   display: flex;
   flex-basis: 0;
   flex: 1 1 0px;
-  background: #000000;
-  background: -webkit-linear-gradient(top right, #000000, #0c412e);
-  background: -moz-linear-gradient(top right, #000000, #0c412e);
-  background: linear-gradient(to bottom left, #000000, #0c412e);
   opacity: 0.9;
   max-width: 550px;
+  
 }
 
 .dayCard {
@@ -111,9 +110,13 @@ select:hover {
 
 @media screen and (max-width: 768px) {
   .app {
+    box-sizing: border-box;
     max-width: 98%;
     margin-left: 1%;
     height: 200px;
+  }
+  .headerContainer{
+    box-sizing: border-box;
   }
   .weathercardscontainer {
     box-sizing: border-box;
@@ -121,12 +124,9 @@ select:hover {
     display: flex;
     flex-basis: 0;
     flex: 1 1 0px;
-    background: #000000;
-    background: -webkit-linear-gradient(top right, #000000, #0c412e);
-    background: -moz-linear-gradient(top right, #000000, #0c412e);
-    background: linear-gradient(to bottom left, #000000, #0c412e);
     opacity: 0.9;
     max-width: 550px;
+    
   }
   .dayCard {
     box-sizing: border-box;
@@ -149,6 +149,12 @@ select:hover {
   }
 }
 @media screen and (max-width: 371px) {
+  .headerContainer{
+    box-sizing: border-box;
+  }
+  .weathercardscontainer {
+    box-sizing: border-box;
+  }
   .dayCard img {
     width: 1.7rem;
   }
