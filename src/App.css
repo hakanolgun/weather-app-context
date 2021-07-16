@@ -21,6 +21,7 @@ body {
   opacity: 0.8;
 }
 .headerContainer {
+  box-sizing: border-box;
   background: #000000;
   background: -webkit-linear-gradient(top right, #000000, #0c412e);
   background: -moz-linear-gradient(top right, #000000, #0c412e);
@@ -29,9 +30,28 @@ body {
   max-width: 550px;
   text-align: center;
   border-radius: 1rem 1rem 0rem 0rem;
-  padding: 0.1rem 0.2rem;
+  padding: 0.2rem 0.2rem;
+}
+select {
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #018502;
+  background: -webkit-linear-gradient(bottom left, #018502, #b3b3b3);
+  background: -moz-linear-gradient(bottom left, #018502, #b3b3b3);
+  background: linear-gradient(to top right, #018502, #b3b3b3);
+}
+select:hover {
+  background: #018502;
+background: -webkit-linear-gradient(top right, #018502, #B3B3B3);
+background: -moz-linear-gradient(top right, #018502, #B3B3B3);
+background: linear-gradient(to bottom left, #018502, #B3B3B3);
 }
 .weathercardscontainer {
+  box-sizing: border-box;
   border-radius: 0rem 0rem 1rem 1rem;
   padding: 0rem 0.5rem;
   display: flex;
