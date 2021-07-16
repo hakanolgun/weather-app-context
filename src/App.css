@@ -10,6 +10,7 @@ body {
 .app {
   border-radius: 1rem;
   height: 222px;
+  max-width: 550px;
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
@@ -21,6 +22,7 @@ body {
   background: linear-gradient(to top left, #74714a, #cbcfc9);
   opacity: 0.8;
 }
+
 .headerContainer {
   display: flex;
   flex-direction: column;
@@ -31,12 +33,16 @@ body {
 .weathercardscontainer {
   margin-top: 1rem;
   border-radius: 0rem 0rem 1rem 1rem;
+  padding:0rem 0.5rem;
   display: flex;
+  flex-basis: 0;
+  flex: 1 1 0px;
   background: #000000;
   background: -webkit-linear-gradient(top right, #000000, #0c412e);
   background: -moz-linear-gradient(top right, #000000, #0c412e);
   background: linear-gradient(to bottom left, #000000, #0c412e);
   opacity: 0.9;
+  max-width: 100%;
 }
 
 .dayCard {
@@ -45,28 +51,49 @@ body {
   font-size: 0.8rem;
   color: white;
   font-weight: bold;
+  max-width: 100%;
 }
 .dayCard p:first-child {
   font-size: 0.9rem;
+  max-width: 100%;
 }
 .dayCard p:last-child {
   font-size: 0.7rem;
 }
-
+.tempParagrafi span:first-child{
+  margin-right: 0.2rem;
+}
 .dayCard img {
   width: 3rem;
 }
-.tempParagrafi span:first-child {
-  font-weight: bold;
-}
 
-.videoContainer {
-  background-color: yellow;
+@media screen and (max-width: 768px) {
+  .app {
+    max-width: 98%;
+    margin-left: 1%;
+    height: 200px;
+  }
+  .dayCard {
+    padding: 0.3rem;
+    text-align: center;
+    font-size: 0.7rem;
+    color: white;
+    font-weight: bold;
+    max-width: 100%;
+  }
+  .dayCard img {
+    width: 2rem;
+  }
+  .tempParagrafi{
+    display: flex;
+    justify-content: space-between;
+  }
 }
-
-.myVideo {
-  z-index: 155;
-  min-width: 100%;
-  min-height: 100%;
-  opacity: 1;
+@media screen and (max-width: 371px) {
+  .tempParagrafi * {
+    display: block;
+  }
+  .dayCard img {
+    width: 1.7rem;
+  }
 }

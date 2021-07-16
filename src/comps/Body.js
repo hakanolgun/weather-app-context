@@ -105,7 +105,6 @@ function Body() {
     <div className="weathercardscontainer">
       <div className="dayCard">
         <p>Today</p>
-        <p>{myWeather.cond0}</p>
         <p>
           <img className="myWeatherImg" src={myImgFunc(myWeather.cond0)} alt="" />
         </p>
@@ -116,7 +115,6 @@ function Body() {
       </div>
       <div className="dayCard">
         <p>{myDateArray[1]}</p>
-        <p>{myWeather.cond1}</p>
         <p>
           <img className="myWeatherImg" src={myImgFunc(myWeather.cond1)} alt="" />
         </p>
@@ -127,8 +125,7 @@ function Body() {
       </div>
       <div className="dayCard">
         <p>{myDateArray[2]}</p>
-        <p>{myWeather.cond2}</p>
-        <p className="tempParagrafi">
+        <p>
           <img className="myWeatherImg" src={myImgFunc(myWeather.cond2)} alt="" />
         </p>
         <p className="tempParagrafi">
@@ -138,7 +135,6 @@ function Body() {
       </div>
       <div className="dayCard">
         <p>{myDateArray[3]}</p>
-        <p>{myWeather.cond3}</p>
         <img className="myWeatherImg" src={myImgFunc(myWeather.cond3)} alt="" />
         <p className="tempParagrafi">
           <span>{myWeather.max3}&#176; </span>
@@ -147,7 +143,6 @@ function Body() {
       </div>
       <div className="dayCard">
         <p>{myDateArray[4]}</p>
-        <p>{myWeather.cond4}</p>
         <img className="myWeatherImg" src={myImgFunc(myWeather.cond4)} alt="" />
         <p className="tempParagrafi">
           <span>{myWeather.max4}&#176; </span>
@@ -156,7 +151,6 @@ function Body() {
       </div>
       <div className="dayCard">
         <p>{myDateArray[5]}</p>
-        <p>{myWeather.cond5}</p>
         <img className="myWeatherImg" src={myImgFunc(myWeather.cond5)} alt="" />
         <p className="tempParagrafi">
           <span>{myWeather.max5}&#176; </span>
@@ -165,7 +159,6 @@ function Body() {
       </div>
       <div className="dayCard">
         <p>{myDateArray[6]}</p>
-        <p>{myWeather.cond6}</p>
         <img className="myWeatherImg" src={myImgFunc(myWeather.cond6)} alt="" />
         <p className="tempParagrafi">
           <span>{myWeather.max6}&#176; </span>
@@ -174,7 +167,6 @@ function Body() {
       </div>
       <div className="dayCard">
         <p>{myDateArray[7]}</p>
-        <p>{myWeather.cond7}</p>
         <img className="myWeatherImg" src={myImgFunc(myWeather.cond7)} alt="" />
         <p className="tempParagrafi">
           <span>{myWeather.max7}&#176; </span>
