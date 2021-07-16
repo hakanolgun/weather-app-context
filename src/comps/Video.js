@@ -4,6 +4,7 @@ import MyContext from "../context/MyContext";
 import cloudy from "../assests/cloudy.mp4";
 import rainy from "../assests/rainy.mp4";
 import sunny from "../assests/sunny.mp4";
+import snowy from "../assests/snowy.mp4";
 
 function Video() {
   const { myWeather } = useContext(MyContext);
@@ -18,6 +19,8 @@ function Video() {
           return rainy;
         case "Clouds":
           return cloudy;
+        case "Snow":
+          return snowy;
         default:
           return sunny;
       }
@@ -25,14 +28,15 @@ function Video() {
   }, [myWeather]);
 
   return (
-    <div className="videContainder">
+    <div className="videoContainer">
       <ReactPlayer
         url={myVidi}
         width="100%"
-        height="100%"
+        height="auto"
         playing="true"
         loop="true"
         volume="0"
+        playbackRate="0.75"
       />
     </div>
   );

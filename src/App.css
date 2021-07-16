@@ -5,6 +5,7 @@ body {
   justify-content: center;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .app {
   border-radius: 1rem;
@@ -17,20 +18,18 @@ body {
   align-items: center;
   justify-content: space-between;
   z-index: 12;
-  background-color: green;
   opacity: 0.8;
 }
-.headerContainer{
+.headerContainer {
   background: #000000;
   background: -webkit-linear-gradient(top right, #000000, #0c412e);
   background: -moz-linear-gradient(top right, #000000, #0c412e);
   background: linear-gradient(to bottom left, #000000, #0c412e);
-
-  min-width: 100%;
+  width: 100%;
   max-width: 550px;
   text-align: center;
   border-radius: 1rem 1rem 0rem 0rem;
-  padding: 0.1rem 0.1rem;
+  padding: 0.1rem 0.2rem;
 }
 .weathercardscontainer {
   border-radius: 0rem 0rem 1rem 1rem;
@@ -71,27 +70,34 @@ body {
   margin-right: 0.2rem;
 }
 
-.videContainder {
-  opacity: 0.5;
+.videoContainer {
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
-  object-fit: cover;
-  z-index: -19;
-  min-width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
+  z-index: -10;
 }
-/* .videContainder > * {
+/* .videoContainer > div {
   opacity: 0.5;
-  min-width: 100%;
+  width: 100vw;
+  min-width: 100vw;
+  height: 100vh;
   min-height: 100vh;
   z-index: -29;
-  position: absolute;
-  right: 0;
-  bottom: 0;
   overflow: hidden;
+  object-fit: fill;
 } */
+
+.videoContainer video {
+  opacity: 0.5;
+  width: 100vw;
+  min-width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  z-index: -29;
+  overflow: hidden;
+  object-fit: fill;
+}
 
 @media screen and (max-width: 768px) {
   .app {
@@ -99,7 +105,21 @@ body {
     margin-left: 1%;
     height: 200px;
   }
+  .weathercardscontainer {
+    box-sizing: border-box;
+    border-radius: 0rem 0rem 1rem 1rem;
+    display: flex;
+    flex-basis: 0;
+    flex: 1 1 0px;
+    background: #000000;
+    background: -webkit-linear-gradient(top right, #000000, #0c412e);
+    background: -moz-linear-gradient(top right, #000000, #0c412e);
+    background: linear-gradient(to bottom left, #000000, #0c412e);
+    opacity: 0.9;
+    max-width: 550px;
+  }
   .dayCard {
+    box-sizing: border-box;
     max-width: 100%;
     display: flex;
     flex-direction: column;

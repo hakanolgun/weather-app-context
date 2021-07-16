@@ -34,8 +34,41 @@ function Body() {
     case "ADANA":
       body.style.backgroundImage = `url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Adana_Roman_Bridge_(Ta%C5%9Fk%C3%B6pr%C3%BC)%2C_Turkey_(23768087008).jpg/1200px-Adana_Roman_Bridge_(Ta%C5%9Fk%C3%B6pr%C3%BC)%2C_Turkey_(23768087008).jpg")`;
       break;
+    case "ADIYAMAN":
+      body.style.backgroundImage = `url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Adiyaman%2C_Turkey_01.jpg/1200px-Adiyaman%2C_Turkey_01.jpg")`;
+      break;
+    case "AFYONKARAHİSAR":
+      body.style.backgroundImage = `url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AFYON_KALES%C4%B0NDEN_-_panoramio.jpg/1200px-AFYON_KALES%C4%B0NDEN_-_panoramio.jpg")`;
+      break;
+    case "AĞRI":
+      body.style.backgroundImage = `url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/B%C3%BCy%C3%BCk_ve_K%C3%BC%C3%A7%C3%BCk_A%C4%9Fr%C4%B1_Da%C4%9F%C4%B1.jpg/1280px-B%C3%BCy%C3%BCk_ve_K%C3%BC%C3%A7%C3%BCk_A%C4%9Fr%C4%B1_Da%C4%9F%C4%B1.jpg")`;
+      break;
+    case "AMASYA":
+      body.style.backgroundImage = `url("https://upload.wikimedia.org/wikipedia/commons/9/91/Amasya_genelgorunum.jpg")`;
+      break;
+    case "ANTALYA":
+      body.style.backgroundImage = `url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Alanya.jpg/1200px-Alanya.jpg")`;
+      break;
+    case "ARTVİN":
+      body.style.backgroundImage = `url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Artvin-2611076.jpg/1200px-Artvin-2611076.jpg")`;
+      break;
+    case "AYDIN":
+      body.style.backgroundImage = `url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/MonumentAyd%C4%B1n_%283%29.JPG/1920px-MonumentAyd%C4%B1n_%283%29.JPG")`;
+      break;
+    case "BALIKESİR":
+      body.style.backgroundImage = `url("http://upload.wikimedia.org/wikipedia/commons/4/42/IslandsofBal%C4%B1kesir.JPG")`;
+      break;
+    case "DENİZLİ":
+      body.style.backgroundImage = `url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Denizli_6600.jpg/1200px-Denizli_6600.jpg")`;
+      break;
+    case "BURSA":
+      body.style.backgroundImage = `url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Ulucami%2CBursa_-_panoramio.jpg/1280px-Ulucami%2CBursa_-_panoramio.jpg")`;
+      break;
+    case "ÇANAKKALE":
+      body.style.backgroundImage = `url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/%C3%87anakkale_%C5%9Eehitleri_An%C4%B1t%C4%B1.JPG/1200px-%C3%87anakkale_%C5%9Eehitleri_An%C4%B1t%C4%B1.JPG")`;
+      break;
     default:
-      body.style.backgroundColor = "white";
+      body.style.backgroundImage = `url("https://picsum.photos/1200/720")`;
   }
 
   //City her değiştiğinde API'den yeni bilgileri isteme ve değişkenlere atama
