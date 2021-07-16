@@ -12,40 +12,7 @@ function Body() {
     myDateArray.push(date);
   }
 
-  const getWeather = async () => {
-    const api_call = await fetch(
-      `https://api.openweathermap.org/data/2.5/onecall?lat=${city.lat}&lon=${city.long}&units=metric&exclude=current,minutely,hourly,alerts&appid=${API_key}`
-    );
-
-    const myresponse = await api_call.json();
-
-    setMyWeather((prev) => ({
-      cond0: myresponse.daily[0].weather[0].main,
-      min0: Math.floor(myresponse.daily[0].temp.min),
-      max0: Math.floor(myresponse.daily[0].temp.max),
-      cond1: myresponse.daily[1].weather[0].main,
-      min1: Math.floor(myresponse.daily[1].temp.min),
-      max1: Math.floor(myresponse.daily[1].temp.max),
-      cond2: myresponse.daily[2].weather[0].main,
-      min2: Math.floor(myresponse.daily[2].temp.min),
-      max2: Math.floor(myresponse.daily[2].temp.max),
-      cond3: myresponse.daily[3].weather[0].main,
-      min3: Math.floor(myresponse.daily[3].temp.min),
-      max3: Math.floor(myresponse.daily[3].temp.max),
-      cond4: myresponse.daily[4].weather[0].main,
-      min4: Math.floor(myresponse.daily[4].temp.min),
-      max4: Math.floor(myresponse.daily[4].temp.max),
-      cond5: myresponse.daily[5].weather[0].main,
-      min5: Math.floor(myresponse.daily[5].temp.min),
-      max5: Math.floor(myresponse.daily[5].temp.max),
-      cond6: myresponse.daily[6].weather[0].main,
-      min6: Math.floor(myresponse.daily[6].temp.min),
-      max6: Math.floor(myresponse.daily[6].temp.max),
-      cond7: myresponse.daily[7].weather[0].main,
-      min7: Math.floor(myresponse.daily[7].temp.min),
-      max7: Math.floor(myresponse.daily[7].temp.max),
-    }));
-  };
+  
 
   const myImgFunc = () => {
     let myimg = document.getElementsByClassName("myWeatherImg");
@@ -121,9 +88,43 @@ function Body() {
 
 
   useEffect( () => {
+    const getWeather = async () => {
+      const api_call = await fetch(
+        `https://api.openweathermap.org/data/2.5/onecall?lat=${city.lat}&lon=${city.long}&units=metric&exclude=current,minutely,hourly,alerts&appid=${API_key}`
+      );
+  
+      const myresponse = await api_call.json();
+  
+      setMyWeather((prev) => ({
+        cond0: myresponse.daily[0].weather[0].main,
+        min0: Math.floor(myresponse.daily[0].temp.min),
+        max0: Math.floor(myresponse.daily[0].temp.max),
+        cond1: myresponse.daily[1].weather[0].main,
+        min1: Math.floor(myresponse.daily[1].temp.min),
+        max1: Math.floor(myresponse.daily[1].temp.max),
+        cond2: myresponse.daily[2].weather[0].main,
+        min2: Math.floor(myresponse.daily[2].temp.min),
+        max2: Math.floor(myresponse.daily[2].temp.max),
+        cond3: myresponse.daily[3].weather[0].main,
+        min3: Math.floor(myresponse.daily[3].temp.min),
+        max3: Math.floor(myresponse.daily[3].temp.max),
+        cond4: myresponse.daily[4].weather[0].main,
+        min4: Math.floor(myresponse.daily[4].temp.min),
+        max4: Math.floor(myresponse.daily[4].temp.max),
+        cond5: myresponse.daily[5].weather[0].main,
+        min5: Math.floor(myresponse.daily[5].temp.min),
+        max5: Math.floor(myresponse.daily[5].temp.max),
+        cond6: myresponse.daily[6].weather[0].main,
+        min6: Math.floor(myresponse.daily[6].temp.min),
+        max6: Math.floor(myresponse.daily[6].temp.max),
+        cond7: myresponse.daily[7].weather[0].main,
+        min7: Math.floor(myresponse.daily[7].temp.min),
+        max7: Math.floor(myresponse.daily[7].temp.max),
+      }));
+    };
     getWeather();
     myImgFunc();
-  }, [city]);
+  }, [city, setMyWeather]);
 
   return (
     <div className="weathercardscontainer">
