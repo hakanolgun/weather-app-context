@@ -16,29 +16,31 @@ function Body() {
 
   const myImgFunc = () => {
     let myimg = document.getElementsByClassName("myWeatherImg");
+    let returnvalue;
     for (let i = 0; i < myimg.length; i++) {
       switch (myimg[i].parentNode.previousSibling.textContent) {
         case "Clear":
-          return "http://openweathermap.org/img/wn/01d@2x.png";
+          returnvalue = "http://openweathermap.org/img/wn/01d@2x.png";
           break;
         case "Rain":
-          return "http://openweathermap.org/img/wn/10d@2x.png";
+          returnvalue = "http://openweathermap.org/img/wn/10d@2x.png";
           break;
         case "Clouds":
-          return "http://openweathermap.org/img/wn/02d@2x.png";
+          returnvalue = "http://openweathermap.org/img/wn/02d@2x.png";
           break;
         case "Snow":
-          return "http://openweathermap.org/img/wn/13d@2x.png";
+          returnvalue = "http://openweathermap.org/img/wn/13d@2x.png";
           break;
         case "Drizzle":
-          return "http://openweathermap.org/img/wn/09d@2x.png";
+          returnvalue = "http://openweathermap.org/img/wn/09d@2x.png";
           break;
         case "Thunderstorm":
-          return "http://openweathermap.org/img/wn/11d@2x.png";
+          returnvalue = "http://openweathermap.org/img/wn/11d@2x.png";
           break;
         default:
-          return "http://openweathermap.org/img/wn/01n@2x.png";
+          returnvalue = "http://openweathermap.org/img/wn/01n@2x.png";
       }
+      return returnvalue;
     }
   };
 
