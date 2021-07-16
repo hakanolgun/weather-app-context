@@ -46,9 +46,9 @@ select {
 }
 select:hover {
   background: #018502;
-background: -webkit-linear-gradient(top right, #018502, #B3B3B3);
-background: -moz-linear-gradient(top right, #018502, #B3B3B3);
-background: linear-gradient(to bottom left, #018502, #B3B3B3);
+  background: -webkit-linear-gradient(top right, #018502, #b3b3b3);
+  background: -moz-linear-gradient(top right, #018502, #b3b3b3);
+  background: linear-gradient(to bottom left, #018502, #b3b3b3);
 }
 .weathercardscontainer {
   box-sizing: border-box;
@@ -97,16 +97,6 @@ background: linear-gradient(to bottom left, #018502, #B3B3B3);
   top: 0;
   z-index: -10;
 }
-/* .videoContainer > div {
-  opacity: 0.5;
-  width: 100vw;
-  min-width: 100vw;
-  height: 100vh;
-  min-height: 100vh;
-  z-index: -29;
-  overflow: hidden;
-  object-fit: fill;
-} */
 
 .videoContainer video {
   opacity: 0.5;
