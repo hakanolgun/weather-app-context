@@ -33,7 +33,7 @@ body {
 .weathercardscontainer {
   margin-top: 1rem;
   border-radius: 0rem 0rem 1rem 1rem;
-  padding:0rem 0.5rem;
+  padding: 0rem 0.5rem;
   display: flex;
   flex-basis: 0;
   flex: 1 1 0px;
@@ -52,6 +52,8 @@ body {
   color: white;
   font-weight: bold;
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .dayCard p:first-child {
   font-size: 0.9rem;
@@ -60,12 +62,15 @@ body {
 .dayCard p:last-child {
   font-size: 0.7rem;
 }
-.tempParagrafi span:first-child{
+
+.dayCard img {
+  width: 3.2rem;
+}
+.tempParagrafi span:first-child {
   margin-right: 0.2rem;
 }
-.dayCard img {
-  width: 3rem;
-}
+
+
 
 @media screen and (max-width: 768px) {
   .app {
@@ -74,26 +79,29 @@ body {
     height: 200px;
   }
   .dayCard {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding: 0.3rem;
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: white;
     font-weight: bold;
-    max-width: 100%;
   }
   .dayCard img {
-    width: 2rem;
+    width: 2.2rem;
   }
-  .tempParagrafi{
+  .tempParagrafi {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 371px) {
-  .tempParagrafi * {
-    display: block;
-  }
   .dayCard img {
     width: 1.7rem;
+  }
+  .tempParagrafi span{
+    display: block;
   }
 }
