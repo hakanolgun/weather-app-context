@@ -6,32 +6,33 @@ body {
   background-position: center;
   background-size: cover;
 }
-
 .app {
   border-radius: 1rem;
-  height: 222px;
+  box-sizing: border-box;
+  height: auto;
   max-width: 550px;
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   z-index: 12;
-  background: #74714a;
-  background: -webkit-linear-gradient(bottom right, #74714a, #cbcfc9);
-  background: -moz-linear-gradient(bottom right, #74714a, #cbcfc9);
-  background: linear-gradient(to top left, #74714a, #cbcfc9);
+  background-color: green;
   opacity: 0.8;
 }
+.headerContainer{
+  background: #000000;
+  background: -webkit-linear-gradient(top right, #000000, #0c412e);
+  background: -moz-linear-gradient(top right, #000000, #0c412e);
+  background: linear-gradient(to bottom left, #000000, #0c412e);
 
-.headerContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  min-width: 100%;
+  max-width: 550px;
+  text-align: center;
+  border-radius: 1rem 1rem 0rem 0rem;
+  padding: 0.1rem 0.1rem;
 }
-
 .weathercardscontainer {
-  margin-top: 1rem;
   border-radius: 0rem 0rem 1rem 1rem;
   padding: 0rem 0.5rem;
   display: flex;
@@ -42,7 +43,7 @@ body {
   background: -moz-linear-gradient(top right, #000000, #0c412e);
   background: linear-gradient(to bottom left, #000000, #0c412e);
   opacity: 0.9;
-  max-width: 100%;
+  max-width: 550px;
 }
 
 .dayCard {
@@ -70,7 +71,27 @@ body {
   margin-right: 0.2rem;
 }
 
-
+.videContainder {
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -19;
+  min-width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+/* .videContainder > * {
+  opacity: 0.5;
+  min-width: 100%;
+  min-height: 100vh;
+  z-index: -29;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+} */
 
 @media screen and (max-width: 768px) {
   .app {
@@ -101,7 +122,7 @@ body {
   .dayCard img {
     width: 1.7rem;
   }
-  .tempParagrafi span{
+  .tempParagrafi span {
     display: block;
   }
 }

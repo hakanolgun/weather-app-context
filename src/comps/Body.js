@@ -16,20 +16,23 @@ function Body() {
   //Seçilen şehre göre ekran arkaplan resmini değiştirme
   let body = document.querySelector("body");
   switch (city.name) {
-    case "Ankara":
+    case "ANKARA":
       body.style.backgroundImage = `url("https://upload.wikimedia.org/wikipedia/commons/c/ce/An%C4%B1tkabir%2C_Ankara.jpg")`;
       break;
-    case "İstanbul":
+    case "İSTANBUL":
       body.style.backgroundImage = `url("https://www.middleeastmonitor.com/wp-content/uploads/2020/07/20200710_2_43383664_56593866.jpg")`;
       break;
-    case "Samsun":
+    case "SAMSUN":
       body.style.backgroundImage = `url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Samsun-landing.jpg/1200px-Samsun-landing.jpg")`;
       break;
-    case "Kocaeli":
+    case "KOCAELİ":
       body.style.backgroundImage = `url("https://upload.wikimedia.org/wikipedia/commons/1/1f/Kocaeli_Kartepe_Tarihi_Hikmetiye_Camii_DSC_6832.jpg")`;
       break;
-    case "Rize":
+    case "RİZE":
       body.style.backgroundImage = `url("https://images.unsplash.com/photo-1568960713091-53ccd34c0d7f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80")`;
+      break;
+    case "ADANA":
+      body.style.backgroundImage = `url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Adana_Roman_Bridge_(Ta%C5%9Fk%C3%B6pr%C3%BC)%2C_Turkey_(23768087008).jpg/1200px-Adana_Roman_Bridge_(Ta%C5%9Fk%C3%B6pr%C3%BC)%2C_Turkey_(23768087008).jpg")`;
       break;
     default:
       body.style.backgroundColor = "white";
