@@ -843,7 +843,7 @@ export const MyProvider = ({ children }) => {
   }
 ];
 
-  const [city, setCity] = useState(cities[3]);
+  const [city, setCity] = useState(cities[33]);
 
   const values = {
     city,

@@ -36,7 +36,6 @@ function Video() {
         playing="true"
         loop="true"
         volume="0"
-        playbackRate="0.75"
       />
     </div>
   );

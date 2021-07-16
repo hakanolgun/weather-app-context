@@ -148,12 +148,15 @@ select:hover {
     justify-content: center;
   }
 }
-@media screen and (max-width: 371px) {
+@media screen and (max-width: 385px) {
   .headerContainer{
     box-sizing: border-box;
   }
   .weathercardscontainer {
     box-sizing: border-box;
+  }
+  .dayCard{
+    padding: 0.2rem;
   }
   .dayCard img {
     width: 1.7rem;
