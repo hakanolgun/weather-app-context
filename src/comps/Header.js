@@ -25,7 +25,6 @@ function Header() {
 
   return (
     <div className="headerContainer">
-      <label>Please select a city: </label>
       <select value={city.name} onChange={setMe} className="citySelect">{citiesList}</select>
     </div>
   );
