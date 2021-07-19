@@ -145,8 +145,8 @@ select:hover {
     justify-content: center;
   }
 }
-@media screen and (max-width: 400px) {
-  body{
+@media screen and (max-width: 421px) {
+  body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,6 +156,7 @@ select:hover {
     width: 80vw;
     max-width: 100vw;
     height: auto;
+    z-index: 777;
   }
   .headerContainer {
     box-sizing: border-box;
