@@ -25,7 +25,6 @@ body {
   background: -webkit-linear-gradient(top right, #000000, #0c412e);
   background: -moz-linear-gradient(top right, #000000, #0c412e);
   background: linear-gradient(to bottom left, #000000, #0c412e);
-
 }
 .headerContainer {
   box-sizing: border-box;
@@ -39,7 +38,7 @@ select {
   padding: 0.5rem;
   border: none;
   outline: none;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #018502;
@@ -61,7 +60,6 @@ select:hover {
   flex: 1 1 0px;
   opacity: 0.9;
   max-width: 550px;
-  
 }
 
 .dayCard {
@@ -115,7 +113,7 @@ select:hover {
     margin-left: 1%;
     height: 200px;
   }
-  .headerContainer{
+  .headerContainer {
     box-sizing: border-box;
   }
   .weathercardscontainer {
@@ -126,7 +124,6 @@ select:hover {
     flex: 1 1 0px;
     opacity: 0.9;
     max-width: 550px;
-    
   }
   .dayCard {
     box-sizing: border-box;
@@ -148,20 +145,60 @@ select:hover {
     justify-content: center;
   }
 }
-@media screen and (max-width: 385px) {
-  .headerContainer{
+@media screen and (max-width: 400px) {
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .app {
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 100vw;
+    height: auto;
+  }
+  .headerContainer {
     box-sizing: border-box;
+    width: 100%;
   }
   .weathercardscontainer {
-    box-sizing: border-box;
+    flex-direction: column;
+    width: 100%;
+    flex-basis: 0;
+    flex: 1 1 0px;
+    padding: 0;
   }
-  .dayCard{
-    padding: 0.2rem;
+  .dayCard {
+    margin: 0;
+    padding: 0.3rem 0.7rem;
+    display: flex;
+    flex-basis: 0;
+    flex: 1 1 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .dayCard > * {
+    padding: 0.1rem 1rem;
+  }
+  .dayCard > p:first-child {
+    justify-self: stretch;
+    align-self: stretch;
+    flex-grow: 1;
+    font-size: 1rem;
+    text-align: left;
+    width: 33%;
+  }
+
+  .dayCard > p:last-child {
+    font-size: 0.8rem;
+    width: 33%;
+  }
+  .dayCard > div {
+    width: 33%;
   }
   .dayCard img {
-    width: 1.7rem;
-  }
-  .tempParagrafi span {
-    display: block;
+    width: 3rem;
   }
 }
