@@ -45,6 +45,10 @@ select {
   background: -moz-linear-gradient(bottom left, #018502, #b3b3b3);
   background: linear-gradient(to top right, #018502, #b3b3b3);
 }
+select option{
+  background-color: rgb(83, 83, 83);
+  color: white;
+}
 select:hover {
   background: #018502;
   background: -webkit-linear-gradient(top right, #018502, #b3b3b3);
