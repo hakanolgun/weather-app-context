@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Weather App - ReactJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+See live: [https://react-weather-hakan.netlify.app/](https://react-weather-hakan.netlify.app/)
+
+<img src="./src/WeatherApp.png" width="100%" align="center">
+
+
+# Getting Started with Create React App
 
 ## Available Scripts
 
