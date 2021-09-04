@@ -1,5 +1,7 @@
 # Weather App - ReactJS
 
+This is a weather forecast app with one week daily weather information for each city in Turkey.
+
 See live: [https://react-weather-hakan.netlify.app/](https://react-weather-hakan.netlify.app/)
 
 <img src="./src/WeatherApp.png" width="100%" align="center">
