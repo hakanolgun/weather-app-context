@@ -9,8 +9,14 @@ See live: [https://react-weather-hakan.netlify.app/](https://react-weather-hakan
 * Dynamic background image for selected city
 * Dynamic background video according to weather condition for selected city
 
-## How to run
+## Tools
+
+* ReactJS
+* Open Weather API
+
+## Usage
 
 In the project directory, you can run:
-
-### `yarn start`
+```
+yarn start
+```
