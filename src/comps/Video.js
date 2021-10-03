@@ -7,12 +7,13 @@ import sunny from "../assests/sunny.mp4";
 import snowy from "../assests/snowy.mp4";
 
 function Video() {
-  const { myWeather } = useContext(MyContext);
+  const { weatherData, city, videoData } = useContext(MyContext);
   const [myVidi, setMyVidi] = useState(sunny);
+  const API_key = "68fa173072924ae601704be2d93569fc";
 
   useEffect(() => {
     setMyVidi(() => {
-      switch (myWeather.cond0) {
+      switch (videoData) {
         case "Clear":
           return sunny;
         case "Rain":
@@ -25,7 +26,7 @@ function Video() {
           return sunny;
       }
     });
-  }, [myWeather]);
+  }, [videoData]);
 
   return (
     <div className="videoContainer">
