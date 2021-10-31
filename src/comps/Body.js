@@ -3,7 +3,7 @@ import MyContext from "../context/MyContext";
 
 function Body() {
   const API_key = "68fa173072924ae601704be2d93569fc";
-  const { city, weatherData, setWeatherData, videoData, setVideoData } =
+  const { city, weatherData, setWeatherData, setVideoData } =
     useContext(MyContext);
   const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -76,9 +76,7 @@ function Body() {
       setVideoData(res.daily[0].weather[0].main);
     };
     getWeather();
-  }, [city, setWeatherData]);
-
-  var myDate = new Date();
+  }, [city, setWeatherData, setVideoData]);
 
   return (
     <div className="weathercardscontainer">
