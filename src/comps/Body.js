@@ -76,7 +76,7 @@ function Body() {
       setVideoData(res.daily[0].weather[0].main);
     };
     getWeather();
-  }, [city, setWeatherData, setVideoData]);
+  }, [city, setWeatherData, setVideoData, API_key]);
 
   return (
     <div className="weathercardscontainer">
