@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react";
 import MyContext from "../context/MyContext";
 
 function Body() {
-  const API_key = "68fa173072924ae601704be2d93569fc";
+  const API_key = process.env.REACT_APP_API_KEY;
   const { city, weatherData, setWeatherData, setVideoData } =
     useContext(MyContext);
   const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
